@@ -1,8 +1,10 @@
 import React from 'react'
-
-function Profile() {
+import PromptCard from './PromptCard'
+function Profile({ name, desc, daa, handleEdit, handleDelete }) {
   return (
-    <div>Profile</div>
+    <section className='w-full'>
+      <h1>{name} Profile</h1>
+    </section>
   )
 }
 
