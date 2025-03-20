@@ -84,7 +84,7 @@ function Feed() {
             </form>
             {isLoading ? (
                 <p className="text-gray-500 text-center mt-4">Loading posts...</p>
-            ) : filteredPosts.length > (
+            ) : (
                 <PromptCardList data={filteredPosts} handleTagClick={handleTagClick} />
             )}
         </section>
